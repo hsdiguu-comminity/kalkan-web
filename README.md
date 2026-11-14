@@ -32,7 +32,18 @@ tests/e2e/              Playwright
 
 ## Kurulum
 
-Henüz yapılmadı – `package.json` ve bağımlılıklar ekip tarafından eklenecek.
+Node.js 22+ gerekir.
+
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm test           # Vitest birim testleri
+npm run lint       # ESLint
+npm run build      # Üretim derlemesi
+```
+
+Uçtan uca testler için bir kez `npx playwright install` çalıştırıp `npm run test:e2e` kullanın.
+Tailwind CSS v4 kullanılır; tema ayarları `src/index.css` içinde `@theme` ile yapılır.
 
 ## Çalışma kuralları
 
