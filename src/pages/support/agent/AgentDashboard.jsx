@@ -34,7 +34,7 @@ const INITIAL_TICKETS = [
 ];
 
 export default function AgentDashboard() {
-  const [tickets, setTickets] = useState(INITIAL_TICKETS);
+  const [tickets] = useState(INITIAL_TICKETS);
   const [selectedId, setSelectedId] = useState('TK-1050');
   const [filter, setFilter] = useState('all');
 
